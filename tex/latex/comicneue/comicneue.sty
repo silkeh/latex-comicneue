@@ -14,7 +14,6 @@
 	{1.0}
 	{Craig Rozynski's Comic Neue fonts}
 
-% Use OpenType fonts for XeTeX and LuaTeX.
 \pdftex_if_engine:F{ \bool_set_true:N \comicneue_otf }
 
 \tl_set:Nn \comicneue_scale {1}
@@ -97,6 +96,9 @@
 
 	\bool_if:NT \comicneue_sfdefault
 		{ \tl_set:Nn \sfdefault {ComicNeue\comicneue_style-TLF} }
+		
+	\bool_if:NT \comicneue_default
+		{ \tl_set:Nx \seriesdefault{\mdseries@sf} }
 
 	\NewDocumentCommand \comicneue {}
 		{ \fontfamily{ComicNeue-TLF}\selectfont }
