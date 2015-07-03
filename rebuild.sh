@@ -29,7 +29,7 @@ autoinst fonts/opentype/$vend/$font/*   \
     -noupdmap
 
 # Move the generated file and the hand-written one back
-rm tex/latex/$font/$fontname.sty
+rm tex/latex/$font/$fontname.sty tex/latex/comicneue/ComicNeueAngular.sty
 mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
 
 # Remove empty directories

@@ -11,12 +11,24 @@
 
 \DeclareFontFamily{T1}{ComicNeueAngular-TLF}{}
 
-\DeclareFontShape{T1}{ComicNeueAngular-TLF}{b}{n}{
-      <-> \ComicNeueAngular@@scale ComicNeueAngular-Bold-tlf-t1
+\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{sl}{
+      <-> \ComicNeueAngular@@scale ComicNeueAngular-Oblique-tlf-t1
+}{}
+
+\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{n}{
+      <-> \ComicNeueAngular@@scale ComicNeueAngular-tlf-t1
+}{}
+
+\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{it}{
+      <-> ssub * ComicNeueAngular-TLF/m/sl
 }{}
 
 \DeclareFontShape{T1}{ComicNeueAngular-TLF}{b}{sl}{
       <-> \ComicNeueAngular@@scale ComicNeueAngular-BoldOblique-tlf-t1
+}{}
+
+\DeclareFontShape{T1}{ComicNeueAngular-TLF}{b}{n}{
+      <-> \ComicNeueAngular@@scale ComicNeueAngular-Bold-tlf-t1
 }{}
 
 \DeclareFontShape{T1}{ComicNeueAngular-TLF}{b}{it}{
@@ -35,28 +47,16 @@
       <-> ssub * ComicNeueAngular-TLF/l/sl
 }{}
 
-\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{n}{
-      <-> \ComicNeueAngular@@scale ComicNeueAngular-tlf-t1
-}{}
-
-\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{sl}{
-      <-> \ComicNeueAngular@@scale ComicNeueAngular-Oblique-tlf-t1
-}{}
-
-\DeclareFontShape{T1}{ComicNeueAngular-TLF}{m}{it}{
-      <-> ssub * ComicNeueAngular-TLF/m/sl
-}{}
-
-\DeclareFontShape{T1}{ComicNeueAngular-TLF}{bx}{n}{
-      <-> ssub * ComicNeueAngular-TLF/b/n
-}{}
-
 \DeclareFontShape{T1}{ComicNeueAngular-TLF}{bx}{it}{
       <-> ssub * ComicNeueAngular-TLF/b/it
 }{}
 
 \DeclareFontShape{T1}{ComicNeueAngular-TLF}{bx}{sl}{
       <-> ssub * ComicNeueAngular-TLF/b/sl
+}{}
+
+\DeclareFontShape{T1}{ComicNeueAngular-TLF}{bx}{n}{
+      <-> ssub * ComicNeueAngular-TLF/b/n
 }{}
 
 \endinput

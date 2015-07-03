@@ -11,18 +11,6 @@
 
 \DeclareFontFamily{T1}{ComicNeue-TLF}{}
 
-\DeclareFontShape{T1}{ComicNeue-TLF}{b}{n}{
-      <-> \ComicNeue@@scale ComicNeue-Bold-tlf-t1
-}{}
-
-\DeclareFontShape{T1}{ComicNeue-TLF}{b}{sl}{
-      <-> \ComicNeue@@scale ComicNeue-BoldOblique-tlf-t1
-}{}
-
-\DeclareFontShape{T1}{ComicNeue-TLF}{b}{it}{
-      <-> ssub * ComicNeue-TLF/b/sl
-}{}
-
 \DeclareFontShape{T1}{ComicNeue-TLF}{l}{sl}{
       <-> \ComicNeue@@scale ComicNeue-LightOblique-tlf-t1
 }{}
@@ -33,6 +21,18 @@
 
 \DeclareFontShape{T1}{ComicNeue-TLF}{l}{it}{
       <-> ssub * ComicNeue-TLF/l/sl
+}{}
+
+\DeclareFontShape{T1}{ComicNeue-TLF}{b}{n}{
+      <-> \ComicNeue@@scale ComicNeue-Bold-tlf-t1
+}{}
+
+\DeclareFontShape{T1}{ComicNeue-TLF}{b}{sl}{
+      <-> \ComicNeue@@scale ComicNeue-BoldOblique-tlf-t1
+}{}
+
+\DeclareFontShape{T1}{ComicNeue-TLF}{b}{it}{
+      <-> ssub * ComicNeue-TLF/b/sl
 }{}
 
 \DeclareFontShape{T1}{ComicNeue-TLF}{m}{n}{
@@ -47,16 +47,16 @@
       <-> ssub * ComicNeue-TLF/m/sl
 }{}
 
+\DeclareFontShape{T1}{ComicNeue-TLF}{bx}{it}{
+      <-> ssub * ComicNeue-TLF/b/it
+}{}
+
 \DeclareFontShape{T1}{ComicNeue-TLF}{bx}{sl}{
       <-> ssub * ComicNeue-TLF/b/sl
 }{}
 
 \DeclareFontShape{T1}{ComicNeue-TLF}{bx}{n}{
       <-> ssub * ComicNeue-TLF/b/n
-}{}
-
-\DeclareFontShape{T1}{ComicNeue-TLF}{bx}{it}{
-      <-> ssub * ComicNeue-TLF/b/it
 }{}
 
 \endinput

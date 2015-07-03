@@ -11,16 +11,16 @@
 
 \DeclareFontFamily{LY1}{ComicNeue-TLF}{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{n}{
-      <-> \ComicNeue@@scale ComicNeue-tlf-ly1
+\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{sl}{
+      <-> \ComicNeue@@scale ComicNeue-LightOblique-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{sl}{
-      <-> \ComicNeue@@scale ComicNeue-Oblique-tlf-ly1
+\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{n}{
+      <-> \ComicNeue@@scale ComicNeue-Light-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{it}{
-      <-> ssub * ComicNeue-TLF/m/sl
+\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{it}{
+      <-> ssub * ComicNeue-TLF/l/sl
 }{}
 
 \DeclareFontShape{LY1}{ComicNeue-TLF}{b}{n}{
@@ -35,16 +35,20 @@
       <-> ssub * ComicNeue-TLF/b/sl
 }{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{sl}{
-      <-> \ComicNeue@@scale ComicNeue-LightOblique-tlf-ly1
+\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{sl}{
+      <-> \ComicNeue@@scale ComicNeue-Oblique-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{n}{
-      <-> \ComicNeue@@scale ComicNeue-Light-tlf-ly1
+\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{n}{
+      <-> \ComicNeue@@scale ComicNeue-tlf-ly1
 }{}
 
-\DeclareFontShape{LY1}{ComicNeue-TLF}{l}{it}{
-      <-> ssub * ComicNeue-TLF/l/sl
+\DeclareFontShape{LY1}{ComicNeue-TLF}{m}{it}{
+      <-> ssub * ComicNeue-TLF/m/sl
+}{}
+
+\DeclareFontShape{LY1}{ComicNeue-TLF}{bx}{sl}{
+      <-> ssub * ComicNeue-TLF/b/sl
 }{}
 
 \DeclareFontShape{LY1}{ComicNeue-TLF}{bx}{n}{
@@ -53,10 +57,6 @@
 
 \DeclareFontShape{LY1}{ComicNeue-TLF}{bx}{it}{
       <-> ssub * ComicNeue-TLF/b/it
-}{}
-
-\DeclareFontShape{LY1}{ComicNeue-TLF}{bx}{sl}{
-      <-> ssub * ComicNeue-TLF/b/sl
 }{}
 
 \endinput
