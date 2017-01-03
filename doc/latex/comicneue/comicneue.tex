@@ -1,5 +1,5 @@
-\documentclass[10pt,a4paper,english]{article}
-\usepackage{geometry,metalogo,hyperref,babel,mdwlist,multicol,parskip}
+\documentclass[10pt,a4paper,english,twocolumn]{article}
+\usepackage{geometry,metalogo,hyperref,babel,mdwlist,parskip}
 \usepackage[default]{comicneue}
 \usepackage[scaled=.9]{sourcecodepro}
 
@@ -15,11 +15,10 @@
 }
 
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for comicneue v1.0.\\ \today}
-\listfiles
+\date{Documentation for comicneue v1.1.\\ \today}
+
 \begin{document}
 \maketitle
-\begin{multicols}{2}
 This package provides the Comic Neue fonts in an easy to use way.
 For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts are used.
 The entire font family is included.
@@ -66,17 +65,22 @@ Simple specimen are included on page \pageref{sec:specimen}.
 
 \section{Version history}
 
+\subsection*{1.1}
+\begin{itemize*}
+	\item Joseph Wright: \cmd{sys\_if\_engine} replaces \cmd{pdftex\_if\_engine} (\href{https://github.com/silkeh/latex-raleway/pull/1}{pull request~\#1}).
+\end{itemize*}
+
 \subsection*{1.0}
 \begin{itemize*}
 	\item Initial release with v2.2 of the fonts.
 \end{itemize*}
 
-\end{multicols}
-
+\onecolumn
 \clearpage
 
 \section{Specimen}
 \label{sec:specimen}
+
 \subsection{OpenType}
 \begin{figure}[ht]
 	\centering
@@ -92,4 +96,3 @@ This table can also be found in \file{comicneue-otf-specimen}.
 This table can also be found in \file{comicneue-type1-specimen}.
 
 \end{document}
-

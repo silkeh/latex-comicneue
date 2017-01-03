@@ -10,8 +10,8 @@
 \RequirePackage{ l3keys2e, xparse }
 \ProvidesExplClass
 	{comicneue}
-	{2015/07/03}
-	{1.0}
+	{2017/01/03}
+	{1.1}
 	{Craig Rozynski's Comic Neue fonts}
 
 \sys_if_engine_pdftex:F{ \bool_set_true:N \comicneue_otf }
@@ -38,7 +38,7 @@
 
 \bool_if:NTF \comicneue_otf {
 	\RequirePackage{ fontspec }
-	
+
 	\bool_if:NTF \comicneue_light
 		{ \tl_set:Nn \comicneue_regstyle {Light} }
 		{ \tl_set:Nn \comicneue_regstyle {Regular} }
@@ -53,14 +53,14 @@
 		Extension       = .otf,
 		BoldFont        = *_Bold,
 		BoldItalicFont  = *_Bold_Oblique }
-	
+
 	\bool_if:NT \comicneue_sfdefault {
 		\setsansfont
 			[ UprightFont   = *_\comicneue_regstyle,
 			  ItalicFont    = *_\comicneue_regstyle _Oblique ]
 			{ComicNeue\comicneue_style}
 	}
-	
+
 	\newfontfamily \comicneue
 		[ UprightFont   = *_Regular,
 		  ItalicFont    = *_Regular_Oblique ]
@@ -70,7 +70,7 @@
 		[ UprightFont   = *_Light,
 		  ItalicFont    = *_Light_Oblique ]
 		{ComicNeue}
-	
+
 	\newfontfamily \comicneueangular
 		[ UprightFont   = *_Regular,
 		  ItalicFont    = *_Regular_Oblique ]
@@ -96,20 +96,20 @@
 
 	\bool_if:NT \comicneue_sfdefault
 		{ \tl_set:Nn \sfdefault {ComicNeue\comicneue_style-TLF} }
-		
+
 	\bool_if:NT \comicneue_default
 		{ \tl_set:Nx \seriesdefault{\mdseries@sf} }
 
 	\NewDocumentCommand \comicneue {}
 		{ \fontfamily{ComicNeue-TLF}\selectfont }
-	
+
 	\NewDocumentCommand \comicneuelight {}
 		{ \fontfamily{ComicNeue-TLF}\fontseries{l}\selectfont }
-	
+
 	\NewDocumentCommand \comicneueangular {}
 		{ \fontfamily{ComicNeueAngular-TLF}\selectfont }
-	
-	\NewDocumentCommand \comicneueangularlight {} 
+
+	\NewDocumentCommand \comicneueangularlight {}
 		{ \fontfamily{ComicNeueAngular-TLF}\fontseries{l}\selectfont }
 }
 
