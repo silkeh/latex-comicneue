@@ -44,42 +44,42 @@
 		{ \tl_set:Nn \comicneue_regstyle {Regular} }
 
 	\bool_if:NTF \comicneue_angular
-		{ \tl_set:Nn \comicneue_style {-Angular} }
+		{ \tl_set:Nn \comicneue_style {Angular} }
 		{ \tl_set:Nn \comicneue_style {} }
 
 	\defaultfontfeatures {
 		Ligatures       = TeX,
 		Scale           = \comicneue_scale,
 		Extension       = .otf,
-		BoldFont        = *_Bold,
-		BoldItalicFont  = *_Bold_Oblique }
+		BoldFont        = *-Bold,
+		BoldItalicFont  = *-BoldItalic }
 
 	\bool_if:NT \comicneue_sfdefault {
 		\setsansfont
-			[ UprightFont   = *_\comicneue_regstyle,
-			  ItalicFont    = *_\comicneue_regstyle _Oblique ]
+			[ UprightFont   = *-\comicneue_regstyle,
+			  ItalicFont    = *-\comicneue_regstyle Italic ]
 			{ComicNeue\comicneue_style}
 	}
 
 	\newfontfamily \comicneue
-		[ UprightFont   = *_Regular,
-		  ItalicFont    = *_Regular_Oblique ]
+		[ UprightFont   = *-Regular,
+		  ItalicFont    = *-RegularItalic ]
 		{ComicNeue}
 
 	\newfontfamily \comicneuelight
-		[ UprightFont   = *_Light,
-		  ItalicFont    = *_Light_Oblique ]
+		[ UprightFont   = *-Light,
+		  ItalicFont    = *-LightItalic ]
 		{ComicNeue}
 
 	\newfontfamily \comicneueangular
-		[ UprightFont   = *_Regular,
-		  ItalicFont    = *_Regular_Oblique ]
-		{ComicNeue-Angular}
+		[ UprightFont   = *-Regular,
+		  ItalicFont    = *-RegularItalic ]
+		{ComicNeueAngular}
 
 	\newfontfamily \comicneueangularlight
-		[ UprightFont   = *_Light,
-		  ItalicFont    = *_Light_Oblique ]
-		{ComicNeue-Angular}
+		[ UprightFont   = *-Light,
+		  ItalicFont    = *-LightItalic ]
+		{ComicNeueAngular}
 
 	\defaultfontfeatures{}
 }{
