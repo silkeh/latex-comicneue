@@ -12,7 +12,8 @@ font=${fontname,,}
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
 # Convert the OpenType fonts
-autoinst fonts/opentype/$vend/$font/*   \
+_autoinst() {
+autoinst fonts/opentype/$vend/$font/$1-* \
     -sanserif                           \
     -target=.                           \
     -vendor="$vend"                     \
@@ -27,9 +28,12 @@ autoinst fonts/opentype/$vend/$font/*   \
     -notitling                          \
     -noornaments                        \
     -noupdmap
+}
+_autoinst ComicNeue
+_autoinst ComicNeueAngular
 
 # Move the generated file and the hand-written one back
-rm tex/latex/$font/$fontname.sty tex/latex/comicneue/ComicNeueAngular.sty
+rm tex/latex/$font/$fontname.sty tex/latex/comicneue/${fontname}Angular.sty
 mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
 
 # Remove empty directories
